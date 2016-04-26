@@ -4,8 +4,8 @@ var requestHandlers = require("./requestHandlers");
 
 var handle = {};
 
-handle["/"] = requestHandlers.iniciar;
-handle["/iniciar"] = requestHandlers.iniciar;
-handle["/subir"] = requestHandlers.subir;
+handle["/"] = requestHandlers.start;
+handle["/start"] = requestHandlers.start;
+handle["/upload"] = requestHandlers.upload;
 
-server.iniciar(router.route, handle);
+server.start(router.route, handle);
