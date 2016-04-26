@@ -1,8 +1,10 @@
 var http = require("http");
+var url = require("url");
 
 function iniciar() {
 	function onRequest(request, response) {
-		console.log("+ Peticion recibida.");
+		var pathname = url.parse(request.url).pathname;
+		console.log("+ Peticion recibida para " + pathname + " recibida.");
 		response.writeHead(200, {"Content-Type": "text/html"});
 		response.write("Hola Mundo!");
 		response.end();
