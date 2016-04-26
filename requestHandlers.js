@@ -5,7 +5,7 @@ function iniciar() {
 		//Obtener la hora actual
 		var startTime = new Date().getTime();
 		//Deteniendo el CPU
-		while (new Date().getTime < startTime + miliSeconds);
+		while (new Date().getTime() < startTime + miliSeconds);
 	}
 
 	sleep(10000);
